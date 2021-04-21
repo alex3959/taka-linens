@@ -1,7 +1,106 @@
-@import 'vars';
-@import 'fonts';
-@import 'reset';
-@import 'libs';
-@import 'global';
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "libs";
+@import "global";
+
+.header {
+    // .header__top
+
+    &__top {
+        box-shadow: inset 0 -1px 0 $header-border-color;
+    }
+    &__top-wrap {
+        padding: 12px 0;
+        display: flex;
+    }
+
+    // .header__bottom-wrap
+
+    &__bottom-wrap {
+        padding: 8px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    // .header__order-link
+
+    &__order-link {
+        font-family: "Raleway Medium";
+        font-size: 12px;
+        font-weight: 100;
+        line-height: 16px;
+        color: $btn-base-color;
+        border-bottom: 1px dashed $btn-base-color;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    // .header__call-phone
+
+    &__call-phone {
+        color: $phone-color;
+        font-family: "Raleway Medium";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: $base-font-weight;
+        line-height: 16px;
+        &:hover {
+            color: $btn-base-color;
+        }
+    }
+
+    .whatsup-icon {
+        &::before {
+            content: "";
+            background-image: url(../images/whatsup.svg);
+            width: 25px;
+            height: 25px;
+            display: block;
+        }
+        &:hover {
+            &::before {
+                background-image: url(../images/whatsup-2.svg);
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+    .telegram-icon {
+        &::before {
+            content: "";
+            background-image: url(../images/telegram.svg);
+            width: 26px;
+            height: 26px;
+            display: block;
+        }
+        &:hover {
+            &::before {
+                background-image: url(../images/telegram-2.svg);
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}
+
+.logo {
+    // .logo__wrap
+
+    &__wrap {
+        display: flex;
+    }
+
+    // .logo__img
+
+    &__img {
+        max-width: 136px;
+        height: auto;
+    }
+}
+
+// banner
 
 
