@@ -15,7 +15,7 @@
         <div class="header__top">
             <div class="container">
                 <div class="header__top-wrap">
-                    <div class="logo"><a class="logo__link" href="#"><img class="logo__img" src="images/logo-black.svg"
+                    <div class="logo"><a class="logo__link" href="/"><img class="logo__img" src="images/logo-black.svg"
                                 alt="logo img"></a></div>
                 </div>
             </div>
@@ -31,7 +31,20 @@
             </div>
         </div>
     </header>
-
+    <main class="main">
+        <div class="wrapper container">
+            <p class="main__caption">Интернет-магазин</p>
+            <h1 class="main__title">Постельное бельё</h1>
+            <h2 class="main__subtitle">известных брендов от 5800 ₽</h2>
+            <p class="main__text">Оставьте ваш номер телефона и мы вышлем на WhatsApp каталог с ценами</p>
+            <form class="main__form" action="getCatalog.php" method="POST">
+                <input class="main__form-input" type="tel" name="tel" placeholder="Введите ваш телефон">
+                <input class="main__form-btn" type="submit" value="Получить каталог и скидку">
+            </form>
+            <a class="main__link" href="#">Перейти в магазин</a>
+            <p class="main__info">Оставляя контактную информацию, вы соглашаетесь на обработку персональных данных</p>
+        </div>
+    </main>
 
     <script src="js/main.min.js"></script>
 </body>
