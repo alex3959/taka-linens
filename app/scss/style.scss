@@ -10,6 +10,7 @@
     &__top {
         box-shadow: inset 0 -1px 0 $header-border-color;
     }
+
     &__top-wrap {
         padding: 12px 0;
         display: flex;
@@ -33,6 +34,7 @@
         line-height: 16px;
         color: $btn-base-color;
         border-bottom: 1px dashed $btn-base-color;
+
         &:hover {
             transform: scale(1.1);
         }
@@ -47,6 +49,7 @@
         font-style: normal;
         font-weight: 600;
         line-height: 16px;
+
         &:hover {
             color: $btn-base-color;
         }
@@ -61,6 +64,7 @@
         height: 25px;
         display: block;
     }
+
     &:hover {
         &::before {
             background-image: url(../images/whatsup-2.svg);
@@ -69,6 +73,7 @@
         }
     }
 }
+
 .telegram-icon {
     &::before {
         content: "";
@@ -77,6 +82,7 @@
         height: 26px;
         display: block;
     }
+
     &:hover {
         &::before {
             background-image: url(../images/telegram-2.svg);
@@ -110,6 +116,9 @@
     box-sizing: border-box;
     padding-top: 24px;
     padding-bottom: 9px;
+    display: flex;
+    flex-direction: column;
+    width: 100vh;
 }
 
 .main {
@@ -117,6 +126,8 @@
 
     color: $font-base-color;
     font-family: "Raleway Medium";
+    display: flex;
+    height: 100vh;
 
     &__caption {
         font-size: 12px;
@@ -164,6 +175,7 @@
         background-color: transparent;
         border: none;
         box-shadow: inset 0 -1px 0 #d9d7d7;
+
         &::placeholder {
             color: $placeholder-color;
         }
@@ -193,7 +205,8 @@
         font-family: "Manrope";
         font-size: 16px;
         line-height: 24px;
-        &:hover{
+
+        &:hover {
             color: $btn-base-color;
         }
     }
